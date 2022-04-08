@@ -1,0 +1,99 @@
+.skill-area{
+    margin-bottom:50px;
+
+    .img-slider{
+        margin-bottom:30px;
+        padding-bottom:10px;
+        display:flex;
+        overflow-x: auto;
+        
+        img:not(:first-child){
+            margin-left:5px;
+        }
+    }
+
+    .skill-group{
+        padding:10px 0 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        &.etc,
+        &.design{
+            .skill-item{
+                flex:1;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        
+        &.etc{
+            .skill-item{
+                .icon-etc{
+                    width:35px;
+                    height:35px;
+                }
+                .title{
+                    padding-left:5px;
+                }
+            }
+        }
+
+        &.design{
+            margin-bottom:10px;
+
+            .skill-item{
+                .icon-design{
+                    width:40px;
+                    height:40px;
+                    &:last-child{
+                        width:90px;
+                        height:90px;
+                    }
+                }
+                .title{
+                    font-size: 12px;
+                }
+            }
+        }
+
+
+
+        &.coding{
+            gap:15px;
+            border:1px dashed $thema01-07;
+
+            .skill-item{
+                position: relative;
+                width:60px;
+                height:80px;
+                color: $thema01-07;
+
+                .icon-doc{
+                    width:100%;
+                    height:auto;
+                }
+                .title{
+                    position: absolute;
+                    bottom:14px;
+                    left:-10px;
+                    font-weight: 600;
+
+                    &.left{
+                        left:-25px;
+                    }
+                }
+                &:not(:first-child),
+                &:not(:nth-child(4)){
+                    margin-left:20px;
+                }
+
+                &.blur{
+                    opacity:0.3;
+                }
+            }
+        }
+    }
+}

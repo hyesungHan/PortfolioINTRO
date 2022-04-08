@@ -1,0 +1,99 @@
+.portfolio-area{
+
+    .portfoilo-group{
+        position:relative;
+        margin:0 auto 30px;
+        padding:5px 15px 0;
+        width:285px;
+        border:2px solid $thema01-07;
+        background-color: $thema01-01;
+
+        &::before{
+            content:'';
+            position:absolute;
+            top:30px;
+            left:-20px;
+            display:block;
+            width:320px;
+            height:5px;
+            background-color: $thema01-07;
+            z-index: -1;
+        }
+        
+        .title-group{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:5px 0 10px;            
+            .title{
+                font-size: 26px;
+            }
+            
+            .go-to-link{
+                padding-top:5px;
+                display:flex;
+                justify-content:center;
+                align-items: center;
+                font-size: 14px;
+                .icon-link{
+                    margin-left:3px;
+                    width:15px;
+                    height:15px;
+                }
+            }
+        }
+
+        .content-list{
+            margin-bottom: 5px;
+            padding:5px 10px 0;
+            height:200px;
+            overflow-y: auto;
+            border-top:1px solid $thema01-05;
+
+            .content-item{
+                display:flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                .title{
+                    display:block;
+                    width:100%;
+                    font-size: 15px;
+                    font-weight: 600;
+                }
+                .desc{
+                    margin-left:8%;
+                    text-align: initial;
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .btn-toggle{
+            padding:10px 0;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            border-top:1px solid $thema01-05;
+            cursor: pointer;
+            .txt{
+                font-size: 16px;
+                font-weight: 600;
+            }
+            .btn-icon{
+                margin-top:5px;
+                margin-left:5px;
+                display:inline-block;
+                width:10px;
+                height:10px;
+                border-left:2px solid $thema01-07;
+                border-top:2px solid $thema01-07;
+                transform: rotate(45deg);
+
+                &.is-open{
+                    margin-top:0;
+                    transform: rotate(-135deg);
+                }
+            }
+        }
+    }
+}

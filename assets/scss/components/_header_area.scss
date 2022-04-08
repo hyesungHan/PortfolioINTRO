@@ -1,0 +1,34 @@
+.header-area{
+    // position: fixed;
+    // top:0;
+    // left:0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    .title{
+        line-height:3;
+        font-size:30px;
+    }
+
+    .menu-icon{
+        position:relative;
+        display:inline-block;
+        width:30px;
+        height:30px;
+
+        &::before,
+        &::after{
+            content:'';
+            position:absolute;
+            display:inline-block;
+            width:30px;
+            height:2px;
+            background-color: $thema01-07;
+        }
+
+        &::after{
+            top:5px;
+        }
+    }
+}
