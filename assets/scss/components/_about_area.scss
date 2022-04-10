@@ -112,7 +112,15 @@
 @media screen and (min-width:1025px) {
     .about-area{
         margin:0 auto;
+        width:40%;
 
+        .common-inner{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            // align-items: center;
+            gap:100px;
+        }
         .id-card-area{
             display:flex;
             flex-direction: row-reverse;

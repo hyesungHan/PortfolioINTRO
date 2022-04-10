@@ -142,6 +142,13 @@ li {
 @media screen and (min-width: 1025px) {
   .about-area {
     margin: 0 auto;
+    width: 40%;
+  }
+  .about-area .common-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 100px;
   }
   .about-area .id-card-area {
     display: flex;
@@ -218,6 +225,12 @@ li {
   transform: translateX(-50%);
 }
 
+@media screen and (min-width: 744px) and (max-width: 1024px) {
+  .btn-scroll-top {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 1025px) {
   .btn-scroll-top {
     display: none;
@@ -264,6 +277,7 @@ body {
 
 @media screen and (min-width: 1025px) {
   .wrap {
+    margin: auto;
     display: flex;
     justify-content: center;
     width: 90%;
@@ -444,6 +458,14 @@ body {
   margin-left: 8%;
   text-align: initial;
   font-size: 14px;
+}
+
+.portfolio-area .portfolio-group .portfolio-box .content-list .content-item .list-style {
+  margin-left: 15px;
+}
+
+.portfolio-area .portfolio-group .portfolio-box .content-list .content-item .list-style .desc {
+  list-style: disc;
 }
 
 .portfolio-area .portfolio-group .portfolio-box .btn-toggle {

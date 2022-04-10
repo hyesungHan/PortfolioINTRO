@@ -88,6 +88,12 @@
                         text-align: initial;
                         font-size: 14px;
                     }
+                    .list-style{
+                        margin-left:15px;
+                        .desc{
+                            list-style:disc;
+                        }
+                    }
                 }
             }
     

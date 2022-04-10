@@ -37,6 +37,12 @@
     }
 }
 
+@media screen and (min-width:744px) and (max-width:1024px) {
+    .btn-scroll-top{
+        display:none;
+    }
+}
+
 @media screen and (min-width:1025px) {
     .btn-scroll-top{
         display:none;
