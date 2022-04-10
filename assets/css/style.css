@@ -142,7 +142,7 @@ li {
 @media screen and (min-width: 1025px) {
   .about-area {
     margin: 0 auto;
-    width: 40%;
+    width: 35%;
   }
   .about-area .common-inner {
     display: flex;
@@ -181,6 +181,15 @@ li {
   }
   .about-area .id-card-area .id-card-info-group .id-card-info-list .id-card-info-item:nth-child(3), .about-area .id-card-area .id-card-info-group .id-card-info-list .id-card-info-item:nth-child(4) {
     align-items: center;
+  }
+  .about-area .bottom-area {
+    justify-content: center;
+  }
+  .about-area .bottom-area .txt {
+    padding-right: 0;
+  }
+  .about-area .bottom-area .scroll {
+    display: none;
   }
 }
 
@@ -456,7 +465,7 @@ body {
 
 .portfolio-area .portfolio-group .portfolio-box .content-list .content-item .desc {
   margin-left: 8%;
-  text-align: initial;
+  text-align: justify;
   font-size: 14px;
 }
 
@@ -504,11 +513,43 @@ body {
   .portfolio-area .portfolio-group .portfolio-box {
     padding-top: 10px;
   }
+  .portfolio-area .portfolio-group .portfolio-box .title-group .go-to-link {
+    font-size: 18px;
+  }
+  .portfolio-area .portfolio-group .portfolio-box .title-group .go-to-link .icon-link {
+    width: 20px;
+    height: 20px;
+  }
+  .portfolio-area .portfolio-group .portfolio-box .content-list {
+    height: 250px;
+  }
+  .portfolio-area .portfolio-group .portfolio-box .content-list .content-item .title {
+    font-size: 20px;
+  }
+  .portfolio-area .portfolio-group .portfolio-box .content-list .content-item .desc {
+    font-size: 18px;
+  }
+  .portfolio-area .portfolio-group .portfolio-box .content-list .content-item:not(:last-child) {
+    margin-bottom: 5px;
+  }
+  .portfolio-area .portfolio-group .portfolio-box .btn-toggle {
+    padding: 15px 0;
+  }
+  .portfolio-area .portfolio-group .portfolio-box .btn-toggle .txt {
+    font-size: 20px;
+  }
 }
 
 @media screen and (min-width: 1025px) {
   .portfolio-area .title-area {
     margin-bottom: 30px;
+  }
+  .portfolio-area .portfolio-group .portfolio-box {
+    width: 95%;
+  }
+  .portfolio-area .portfolio-group .portfolio-box .title-group .title,
+  .portfolio-area .portfolio-group .portfolio-box .title-group .go-to-link {
+    flex-shrink: 0;
   }
 }
 

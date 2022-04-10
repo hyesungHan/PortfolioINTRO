@@ -85,7 +85,7 @@
                     }
                     .desc{
                         margin-left:8%;
-                        text-align: initial;
+                        text-align: justify;
                         font-size: 14px;
                     }
                     .list-style{
@@ -135,6 +135,35 @@
         .portfolio-group{
             .portfolio-box{
                 padding-top:10px;
+                .title-group{
+                    .go-to-link{
+                        font-size: 18px;
+                        .icon-link{
+                            width:20px;
+                            height:20px;
+                        }
+                    }
+                }
+                .content-list{  
+                    height:250px;     
+                    .content-item{
+                        .title{
+                            font-size: 20px;
+                        }
+                        .desc{
+                            font-size: 18px;
+                        }
+                        &:not(:last-child){
+                            margin-bottom:5px;
+                        }
+                    }
+                }
+                .btn-toggle{
+                    padding:15px 0;
+                    .txt{
+                        font-size: 20px;
+                    }
+                }
             }
         }
     }
@@ -144,6 +173,17 @@
     .portfolio-area{
         .title-area{
             margin-bottom:30px;
+        }
+        .portfolio-group{
+            .portfolio-box{
+                width:95%;
+                .title-group{
+                    .title,
+                    .go-to-link{
+                        flex-shrink: 0;
+                    }
+                }
+            }
         }
     }
 }
