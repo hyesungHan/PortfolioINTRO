@@ -1,9 +1,15 @@
 .about-area{
-    margin:20px 0 50px;
-    // background-color: $thema01-04;
+    margin:150px 0 50px;
 
+    .inner{
+        margin:0 auto;
+        width:90%;
+    }
     .id-card-area{
         margin:0 auto 30px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
         width:285px;
         height:190px;
         border-radius:15px;
@@ -11,7 +17,7 @@
         overflow: hidden;
 
         .card-line{
-            display:inline-block;
+            display:block;
             width:100%;
             height:35px;
             background-color: $thema01-06;
@@ -58,7 +64,6 @@
             }
         }
         .scroll{
-            padding-right:20px;
             display:flex;
             flex-direction: column;
             align-items: center;
@@ -71,6 +76,80 @@
                 border-left:5px solid $thema01-07;
                 border-bottom:5px solid $thema01-07;
                 transform:rotate(-45deg);
+            }
+        }
+    }
+}
+
+@media screen and (min-width:744px) and (max-width:1024px)  {
+    .about-area{
+        margin-top:0;
+        float:left;
+        width:50%;
+
+        .common-inner{
+            padding:0 25px;
+        }
+        .id-card-area{
+            margin:80px auto 50px;
+        }
+        .bottom-area{
+            justify-content: center;
+            .txt{
+                padding-right:0;
+                text-align: center;
+                .br{
+                    display:inline;
+                }
+            }
+            .scroll{
+                display:none;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1025px) {
+    .about-area{
+        margin:0 auto;
+
+        .id-card-area{
+            display:flex;
+            flex-direction: row-reverse;
+            width:190px;
+            height:285px;
+
+            .card-line{
+                width:35px;
+                height:100%;
+                .txt{
+                    white-space: nowrap;
+                    transform: rotate(90deg) translateX(60px);
+                }
+            }
+
+            .id-card-info-group{
+                flex-direction: column;
+                justify-content:center;
+
+                img{
+                    margin-bottom: 10px;
+                }
+                .id-card-info-list{
+                    display:flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    .id-card-info-item{
+                        &:nth-child(2n){
+                        font-size: 12px;
+                        }
+                        &:nth-child(3),
+                        &:nth-child(4){
+                            align-items: center;
+                        }
+                    }
+                }
+                
             }
         }
     }

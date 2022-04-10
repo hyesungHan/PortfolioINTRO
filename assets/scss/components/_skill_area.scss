@@ -18,7 +18,7 @@
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-
+       
         &.etc,
         &.design{
             .skill-item{
@@ -59,11 +59,13 @@
             }
         }
 
-
-
         &.coding{
             gap:15px;
             border:1px dashed $thema01-07;
+
+            .wrap-inner{
+                display:flex;
+            }
 
             .skill-item{
                 position: relative;
@@ -91,9 +93,44 @@
                 }
 
                 &.blur{
-                    opacity:0.3;
+                    opacity:0.2;
                 }
             }
         }
     }
 }
+
+@media screen and (min-width:744px) and (max-width:1024px)  {
+    .skill-area{
+        float:left;
+        margin-bottom:70px;
+        width:50%;
+
+        .common-inner{
+            padding:0 25px;
+        }
+        .skill-group{
+            padding:10px 0;
+        }
+    }
+}
+
+@media screen and (min-width:1025px) {
+    .skill-area{
+        margin-bottom:15px;
+        .title-area{
+            margin-bottom:20px;
+        }
+        .wrap-skill{
+            display:flex;
+            // align-items: center;
+            gap:10px;
+            
+            .wrap-skill-inner,
+            .coding{
+                flex:1;
+            }
+        }
+    }
+}
+

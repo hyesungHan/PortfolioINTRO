@@ -1,3 +1,6 @@
+body{
+    min-width: 320px;
+}
 .common-inner{
     padding:0 5px;
 }
@@ -16,5 +19,37 @@
         display:inline-block;
         vertical-align: top;
         font-size: 34px;
+    }
+}
+
+@media screen and (min-width:744px) and (max-width:1024px)  {
+    .title-area{
+        margin-bottom:30px;
+    }
+    .wrap-row{
+        display:flex;
+        height:335px;
+        .portfolio-group{
+            flex:1;
+        }
+    }
+}
+
+@media screen and (min-width:1025px){
+    .wrap{
+        display:flex;
+        justify-content:center;
+        width:90%;
+        .wrap-desktop{
+            margin:0 auto;
+            width:60%;
+        }
+        .wrap-row{
+            margin:0 auto;
+            display:flex;
+            .portfolio-group{
+                flex:1;
+            }
+        }
     }
 }

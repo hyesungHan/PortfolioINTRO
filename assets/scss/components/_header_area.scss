@@ -1,34 +1,73 @@
 .header-area{
-    // position: fixed;
-    // top:0;
-    // left:0;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
     display:flex;
     justify-content:space-between;
     align-items:center;
+    background-color: $thema01-01;
+    overflow: hidden;
+    z-index:10;
 
     .title{
         line-height:3;
         font-size:30px;
     }
 
-    .menu-icon{
-        position:relative;
-        display:inline-block;
-        width:30px;
-        height:30px;
+    
+    .menu-area{
+        position: fixed;
+        right:-62px;
+        top:10px;
+        background-color: $thema01-02;
 
-        &::before,
-        &::after{
-            content:'';
-            position:absolute;
+        .menu-icon{
+            position:relative;
+            left:-30px;
             display:inline-block;
             width:30px;
-            height:2px;
-            background-color: $thema01-07;
+            height:30px;
+            cursor: pointer;
+            // background-color: $thema01-05;
+    
+            &::before,
+            &::after{
+                content:'';
+                position:absolute;
+                display:inline-block;
+                width:30px;
+                height:2px;
+                background-color: $thema01-07;
+            }
+    
+            &::after{
+                top:5px;
+            }
         }
 
-        &::after{
-            top:5px;
+        &.show{
+            right:0px;
+        }
+    }
+
+}
+
+@media screen and (min-width:744px) and (max-width:1024px)  {
+    .header-area{
+        position:static;
+        margin-bottom:30px;
+        .menu-area{
+            display:none;
+        }
+    }
+}
+@media screen and (min-width:1025px) {
+    .header-area{
+        position:static;
+        margin-bottom:30px;
+        .menu-area{
+            display:none;
         }
     }
 }
