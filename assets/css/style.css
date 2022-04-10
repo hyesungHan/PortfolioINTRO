@@ -142,7 +142,7 @@ li {
 @media screen and (min-width: 1025px) {
   .about-area {
     margin: 0 auto;
-    width: 35%;
+    width: 30%;
   }
   .about-area .common-inner {
     display: flex;
@@ -187,6 +187,7 @@ li {
   }
   .about-area .bottom-area .txt {
     padding-right: 0;
+    font-size: 20px;
   }
   .about-area .bottom-area .scroll {
     display: none;
@@ -530,7 +531,7 @@ body {
     font-size: 18px;
   }
   .portfolio-area .portfolio-group .portfolio-box .content-list .content-item:not(:last-child) {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
   .portfolio-area .portfolio-group .portfolio-box .btn-toggle {
     padding: 15px 0;
