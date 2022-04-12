@@ -37,11 +37,11 @@ li {
   margin: 0 auto 30px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   width: 285px;
   height: 190px;
   border-radius: 15px;
-  background-color: #dddbd1;
+  background-color: #d6d6d8;
   overflow: hidden;
 }
 
@@ -49,8 +49,8 @@ li {
   display: block;
   width: 100%;
   height: 35px;
-  background-color: #444f51;
-  color: #dddbd1;
+  background-color: #0f2b5b;
+  color: #d6d6d8;
   text-align: center;
 }
 
@@ -107,8 +107,8 @@ li {
   display: block;
   width: 30px;
   height: 30px;
-  border-left: 5px solid #30383a;
-  border-bottom: 5px solid #30383a;
+  border-left: 5px solid #0c1c47;
+  border-bottom: 5px solid #0c1c47;
   transform: rotate(-45deg);
 }
 
@@ -143,12 +143,20 @@ li {
   .about-area {
     margin: 0 auto;
     width: 30%;
+    height: 100%;
   }
   .about-area .common-inner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 100px;
+    margin: auto;
+    text-align: center;
+  }
+  .about-area .common-inner .helper {
+    display: inline-block;
+    vertical-align: middle;
+    height: 80vh;
+  }
+  .about-area .common-inner .inner {
+    display: inline-block;
+    vertical-align: middle;
   }
   .about-area .id-card-area {
     display: flex;
@@ -179,8 +187,8 @@ li {
   .about-area .id-card-area .id-card-info-group .id-card-info-list .id-card-info-item:nth-child(2n) {
     font-size: 12px;
   }
-  .about-area .id-card-area .id-card-info-group .id-card-info-list .id-card-info-item:nth-child(3), .about-area .id-card-area .id-card-info-group .id-card-info-list .id-card-info-item:nth-child(4) {
-    align-items: center;
+  .about-area .id-card-area .id-card-info-group .id-card-info-list .id-card-info-item:nth-child(1), .about-area .id-card-area .id-card-info-group .id-card-info-list .id-card-info-item:nth-child(2) {
+    text-align: left;
   }
   .about-area .bottom-area {
     justify-content: center;
@@ -195,7 +203,7 @@ li {
 }
 
 .btn-scroll-top {
-  padding: 10px 0;
+  padding: 10px 0 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -222,8 +230,8 @@ li {
 .btn-scroll-top .icon-scroll::before {
   width: 10px;
   height: 10px;
-  border-top: 2px solid #30383a;
-  border-left: 2px solid #30383a;
+  border-top: 2px solid #0c1c47;
+  border-left: 2px solid #0c1c47;
   transform: translateX(-50%) rotate(45deg);
 }
 
@@ -231,7 +239,7 @@ li {
   bottom: 0;
   width: 2px;
   height: 40px;
-  background-color: #30383a;
+  background-color: #0c1c47;
   transform: translateX(-50%);
 }
 
@@ -249,6 +257,7 @@ li {
 
 body {
   min-width: 320px;
+  background-color: rgba(214, 214, 216, 0.29);
 }
 
 .common-inner {
@@ -263,7 +272,7 @@ body {
   display: inline-block;
   width: 10px;
   height: 40px;
-  background-color: #dddbd1;
+  background-color: #d6d6d8;
 }
 
 .title-area .title {
@@ -310,16 +319,17 @@ body {
   top: 0;
   left: 0;
   right: 0;
+  height: 75px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #dddbd1;
+  background-color: #d6d6d8;
   overflow: hidden;
   z-index: 10;
 }
 
 .header-area .title {
-  line-height: 3;
+  line-height: 75px;
   font-size: 30px;
 }
 
@@ -327,7 +337,7 @@ body {
   position: fixed;
   right: -62px;
   top: 10px;
-  background-color: #d1cec6;
+  background-color: #bfc6d1;
 }
 
 .header-area .menu-area .menu-icon {
@@ -345,7 +355,7 @@ body {
   display: inline-block;
   width: 30px;
   height: 2px;
-  background-color: #30383a;
+  background-color: #0c1c47;
 }
 
 .header-area .menu-area .menu-icon::after {
@@ -389,16 +399,16 @@ body {
   display: block;
   width: 100%;
   height: 5px;
-  background-color: #30383a;
+  background-color: #0c1c47;
   z-index: -1;
 }
 
 .portfolio-area .portfolio-group .portfolio-box {
   padding: 5px 15px 0;
   margin: auto;
-  background-color: #dddbd1;
+  background-color: #d6d6d8;
   width: 90%;
-  border: 2px solid #30383a;
+  border: 2px solid #0c1c47;
 }
 
 .portfolio-area .portfolio-group .portfolio-box.is-closed .content-list {
@@ -426,7 +436,7 @@ body {
 }
 
 .portfolio-area .portfolio-group .portfolio-box .title-group .title {
-  font-size: 26px;
+  font-size: 22px;
 }
 
 .portfolio-area .portfolio-group .portfolio-box .title-group .go-to-link {
@@ -434,7 +444,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 14px;
+  font-size: 16px;
+}
+
+.portfolio-area .portfolio-group .portfolio-box .title-group .go-to-link:hover {
+  font-weight: 600;
+  transition: 0.3s ease;
 }
 
 .portfolio-area .portfolio-group .portfolio-box .title-group .go-to-link .icon-link {
@@ -448,7 +463,7 @@ body {
   padding: 5px 10px 0;
   height: 200px;
   overflow-y: auto;
-  border-top: 1px solid #666d70;
+  border-top: 1px solid #0c1c47;
 }
 
 .portfolio-area .portfolio-group .portfolio-box .content-list .content-item {
@@ -483,7 +498,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: 1px solid #666d70;
+  border-top: 1px solid #0c1c47;
   cursor: pointer;
 }
 
@@ -502,8 +517,8 @@ body {
   display: inline-block;
   width: 10px;
   height: 10px;
-  border-left: 2px solid #30383a;
-  border-top: 2px solid #30383a;
+  border-left: 2px solid #0c1c47;
+  border-top: 2px solid #0c1c47;
   transform: rotate(45deg);
 }
 
@@ -613,7 +628,7 @@ body {
 
 .skill-area .skill-group.coding {
   gap: 15px;
-  border: 1px dashed #30383a;
+  border: 1px dashed #0c1c47;
 }
 
 .skill-area .skill-group.coding .wrap-inner {
@@ -624,7 +639,7 @@ body {
   position: relative;
   width: 60px;
   height: 80px;
-  color: #30383a;
+  color: #0c1c47;
 }
 
 .skill-area .skill-group.coding .skill-item .icon-doc {
