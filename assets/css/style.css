@@ -576,128 +576,56 @@ body {
 
 .skill-area {
   margin-bottom: 50px;
-}
-
-.skill-area .img-slider {
-  margin-bottom: 30px;
-  padding-bottom: 10px;
   display: flex;
-  overflow-x: auto;
+  flex-direction: column;
 }
 
-.skill-area .img-slider img:not(:first-child) {
-  margin-left: 5px;
-}
-
-.skill-area .skill-group {
-  padding: 10px 0 10px;
+.skill-area .education-area {
+  width: 90%;
+  max-width: 600px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-self: flex-end;
+}
+
+.skill-area .education-area .edu-group {
+  display: flex;
+  justify-content: flex-start;
   align-items: center;
-  flex-wrap: wrap;
-}
-
-.skill-area .skill-group.etc .skill-item, .skill-area .skill-group.design .skill-item {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.skill-area .skill-group.etc .skill-item .icon-etc {
-  width: 35px;
-  height: 35px;
-}
-
-.skill-area .skill-group.etc .skill-item .title {
-  padding-left: 5px;
-}
-
-.skill-area .skill-group.design {
-  margin-bottom: 10px;
-}
-
-.skill-area .skill-group.design .skill-item .icon-design {
-  width: 40px;
-  height: 40px;
-}
-
-.skill-area .skill-group.design .skill-item .icon-design:last-child {
-  width: 90px;
-  height: 90px;
-}
-
-.skill-area .skill-group.design .skill-item .title {
   font-size: 12px;
+  border-left: 1px dashed;
+  border-bottom: 1px dashed;
 }
 
-.skill-area .skill-group.coding {
-  gap: 15px;
-  border: 1px dashed #0c1c47;
+.skill-area .education-area .edu-group:first-child {
+  border-top: 1px dashed;
 }
 
-.skill-area .skill-group.coding .wrap-inner {
+.skill-area .education-area .edu-group .term {
+  padding: 10px 15px;
   display: flex;
+  flex-direction: column-reverse;
+  text-align: center;
+  border-right: 1px dashed;
 }
 
-.skill-area .skill-group.coding .skill-item {
-  position: relative;
-  width: 60px;
-  height: 80px;
-  color: #0c1c47;
+.skill-area .education-area .edu-group .term .end {
+  text-align: right;
 }
 
-.skill-area .skill-group.coding .skill-item .icon-doc {
-  width: 100%;
-  height: auto;
+.skill-area .education-area .edu-group .edu-list {
+  padding: 10px 0 10px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 1.5;
 }
 
-.skill-area .skill-group.coding .skill-item .title {
-  position: absolute;
-  bottom: 14px;
-  left: -10px;
-  font-weight: 600;
+.skill-area .education-area .edu-group .edu-list .academy {
+  display: block;
+  margin-right: 10px;
 }
 
-.skill-area .skill-group.coding .skill-item .title.left {
-  left: -25px;
-}
-
-.skill-area .skill-group.coding .skill-item:not(:first-child), .skill-area .skill-group.coding .skill-item:not(:nth-child(4)) {
-  margin-left: 20px;
-}
-
-.skill-area .skill-group.coding .skill-item.blur {
-  opacity: 0.2;
-}
-
-@media screen and (min-width: 744px) and (max-width: 1024px) {
-  .skill-area {
-    float: left;
-    margin-bottom: 70px;
-    width: 50%;
-  }
-  .skill-area .common-inner {
-    padding: 0 25px;
-  }
-  .skill-area .skill-group {
-    padding: 10px 0;
-  }
-}
-
-@media screen and (min-width: 1025px) {
-  .skill-area {
-    margin-bottom: 15px;
-  }
-  .skill-area .title-area {
-    margin-bottom: 20px;
-  }
-  .skill-area .wrap-skill {
-    display: flex;
-    gap: 10px;
-  }
-  .skill-area .wrap-skill .wrap-skill-inner,
-  .skill-area .wrap-skill .coding {
-    flex: 1;
-  }
+.skill-area .education-area .edu-group .edu-list .desc {
+  display: block;
+  margin-right: 10px;
 }
