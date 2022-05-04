@@ -12,17 +12,16 @@
         <div class="header-area">
             <div class="common-inner">
                 <h1 class="title">Hyesung's Pages</h1>
-                <div class="menu-area">
+                <!-- <div class="menu-area">
                     <span class="menu-icon" onclick="menuShow()"></span>
                     <ul class="menu-list">
                         <li class="menu-item"><a href="#skill">Skills</a></li>
                         <li class="menu-item"><a href="#port">Portfolio</a></li>
                     </ul>
-                </div>
+                </div> -->
             </div>
         </div>
     </header>
-
     <div class="wrap">
         <div class="about-area">
             <div class="common-inner">
@@ -32,27 +31,57 @@
                 </div> -->
                 <div class="helper"></div>
                 <div class="inner">
-                    <div class="id-card-area">
-                        <span class="card-line">
-                            <p class="txt">IDENTITY CARD</p>
-                        </span>
-                        <div class="id-card-info-group">
-                            <img class="id-img" src="./assets/images/id_img.jpg" alt="인물사진">
-                            <ul class="id-card-info-list">
-                                <li class="id-card-info-item"></li>
-                                <li class="id-card-info-item">Web Publisher</li>
-                                <li class="id-card-info-item">한 혜 성</li>
-                                <li class="id-card-info-item">Hye sung HAN</li>
-                            </ul>
+                    <div class="group">
+                        <div class="id-card-area">
+                            <span class="card-line">
+                                <p class="txt">IDENTITY CARD</p>
+                            </span>
+                            <div class="id-card-info-group">
+                                <img class="id-img" src="./assets/images/id_img.jpg" alt="인물사진">
+                                <ul class="id-card-info-list">
+                                    <li class="id-card-info-item"></li>
+                                    <li class="id-card-info-item">Web Publisher</li>
+                                    <li class="id-card-info-item">한 혜 성</li>
+                                    <li class="id-card-info-item">Hye sung HAN</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="contact-area">
+                            <div class="mobile">
+                                <img class="icon" src="./assets/images/icon_mobile.svg" alt="">
+                                <p class="number">010-3244-8549</p>
+                            </div>
+                            <div class="email">
+                                <img class="icon" src="./assets/images/icon_email.svg" alt="">
+                                <p class="e-address">comet0910@naver.com</p>
+                            </div>
                         </div>
                     </div>
                     <div class="bottom-area">
                         <p class="txt">웹퍼블리셔로<span class="br"> 새롭게</span> 시작하고 싶습니다</p>
-                        <div class="scroll">
-                            <span class="arrow"></span>
-                            <span class="arrow"></span>
-                            <span class="arrow"></span>
+                        <div class="index-area">
+                            <div class="index-item" id="contact">
+                                <p class="title">연락처 보기</p>
+                                <span class="deco">
+                                    <img src="./assets/images/icon_contact.svg" alt="">
+                                </span>
+                            </div>
+                            <a href="#" class="index-item">
+                                <p class="title">이력서 보기</p>
+                                <span class="deco">
+                                    <img src="./assets/images/icon_resume.svg" alt="">
+                                </span>
+                            </a>
+                            <!-- <a href="./resume.html" target="_blank" class="index-item">
+                                <p class="title">이력서 보기</p>
+                                <span class="deco"></span>
+                            </a> -->
                         </div>
+                        <!-- <div class="scroll">
+                            <span class="arrow"></span>
+                            <span class="arrow"></span>
+                            <span class="arrow"></span>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -74,8 +103,8 @@
                         </div>
                         <div class="edu-list">
                             <p class="academy">[인터넷 강의]</p>
-                            <p class="desc">SCSS, JavaScript, JQuery 수강</p>
-                            <p class="desc">포트폴리오 보완 및 제작</p>
+                            <p class="desc">SCSS, JavaScript, JQuery 수강중</p>
+                            <p class="desc">포트폴리오 보완 및 제작중</p>
                         </div>
                     </div>
                     <div class="edu-group">
@@ -195,6 +224,86 @@
                     <div class="portfolio-group">
                         <div class="portfolio-box">
                             <div class="title-group">
+                                <h3 class="title">시티투어버스_ver2</h3>
+                                <a href="http://hyesunghan.github.io/CityTourBus_ver2" target="_blank" class="go-to-link">View Site
+                                    <img class="icon-link" src="./assets/images/icon_link.svg" alt="사이트로 이동">
+                                </a>
+                            </div>
+                            <ul class="content-list">
+                                <li class="content-item">
+                                    <span class="title">구성</span>
+                                    <p class="desc">메인페이지(1)</p>
+                                </li>
+                                <li class="content-item">
+                                    <span class="title">반응형 구간</span>
+                                    <ul class="desc list-style" >
+                                        <li class="desc">DeskTop: 1025px 이상 </li>
+                                        <li class="desc">Tablet: 744px 이상 1024px 이하</li>
+                                        <li class="desc">Mobile: 743px 이하</li>
+                                    </ul>
+                                </li>
+                                <li class="content-item">
+                                    <span class="title">제작기간</span>
+                                    <p class="desc">2022.04.12 ~ </p>
+                                </li>
+                                <li class="content-item">
+                                    <span class="title">사용기술</span>
+                                    <p class="desc">Html, CSS, JavaScript, JQuery, Photoshop, Illustrator</p>
+                                </li>
+                            </ul>
+                            <div class="btn-toggle">
+                                <p class="txt"><span class="front">접</span><span class="back">열</span>기</p>
+                                <span class="btn-icon"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-group">
+                        <div class="portfolio-box is-closed">
+                            <div class="title-group">
+                                <h3 class="title">시티투어버스</h3>
+                                <a href="http://hyesunghan.github.io/CityTourBus" target="_blank" class="go-to-link">View Site
+                                    <img class="icon-link" src="./assets/images/icon_link.svg" alt="사이트로 이동">
+                                </a>
+                            </div>
+                            <ul class="content-list">
+                                <li class="content-item">
+                                    <span class="title">구성</span>
+                                    <p class="desc">메인페이지(1)</p>
+                                </li>
+                                <li class="content-item">
+                                    <span class="title">반응형 구간</span>
+                                    <ul class="desc list-style" >
+                                        <li class="desc">DeskTop: 1001px 이상 </li>
+                                        <li class="desc">Tablet: 481px 이상 1000px 이하</li>
+                                        <li class="desc">Mobile: 480px 이하</li>
+                                    </ul>
+                                </li>
+                                <li class="content-item">
+                                    <span class="title">컨셉</span>
+                                    <ul class="desc list-style" >
+                                        <li class="desc">컬러로고에 어울리는 짙은 갈색, 화사한 빨간색, 톤다운된 노란색을 추출하여 홈페이지에 생기를 불어넣음</li>
+                                        <li class="desc">배경색은 상대적으로 차분한 흰색과 베이지색을 중간중간 삽입하여 깨끗하면서도 띠뜻한 느낌을 심어줌</li>
+                                        <li class="desc">컨텐츠박스와 이미지의 모서리를 라운드 처리하여 버스 이미지에 상응하도록 함</li>
+                                    </ul>
+                                </li>
+                                <li class="content-item">
+                                    <span class="title">제작기간</span>
+                                    <p class="desc">2021.12 ~ 2022.03</p>
+                                </li>
+                                <li class="content-item">
+                                    <span class="title">사용기술</span>
+                                    <p class="desc">Html, CSS, JavaScript, JQuery, Photoshop, Illustrator</p>
+                                </li>
+                            </ul>
+                            <div class="btn-toggle">
+                                <p class="txt"><span class="front">접</span><span class="back">열</span>기</p>
+                                <span class="btn-icon"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-group">
+                        <div class="portfolio-box  is-closed">
+                            <div class="title-group">
                                 <h3 class="title">함께늘봄</h3>
                                 <a href="http://hyesunghan.github.io/withNEULBOM" target="_blank" class="go-to-link">View Site
                                     <img class="icon-link" src="./assets/images/icon_link.svg" alt="사이트로 이동">
@@ -236,86 +345,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="portfolio-group">
-                        <div class="portfolio-box is-closed">
-                            <div class="title-group">
-                                <h3 class="title">시티투어버스</h3>
-                                <a href="http://hyesunghan.github.io/CityTourBus" target="_blank" class="go-to-link">View Site
-                                    <img class="icon-link" src="./assets/images/icon_link.svg" alt="사이트로 이동">
-                                </a>
-                            </div>
-                            <ul class="content-list">
-                                <li class="content-item">
-                                    <span class="title">구성</span>
-                                    <p class="desc">메인페이지(1)</p>
-                                </li>
-                                <li class="content-item">
-                                    <span class="title">반응 구간</span>
-                                    <ul class="desc list-style" >
-                                        <li class="desc">DeskTop: 1001px 이상 </li>
-                                        <li class="desc">Tablet: 481px 이상 1000px 이하</li>
-                                        <li class="desc">Mobile: 480px 이하</li>
-                                    </ul>
-                                </li>
-                                <li class="content-item">
-                                    <span class="title">컨셉</span>
-                                    <ul class="desc list-style" >
-                                        <li class="desc">컬러로고에 어울리는 짙은 갈색, 화사한 빨간색, 톤다운된 노란색을 추출하여 홈페이지에 생기를 불어넣음</li>
-                                        <li class="desc">배경색은 상대적으로 차분한 흰색과 베이지색을 중간중간 삽입하여 깨끗하면서도 띠뜻한 느낌을 심어줌</li>
-                                        <li class="desc">컨텐츠박스와 이미지의 모서리를 라운드 처리하여 버스 이미지에 상응하도록 함</li>
-                                    </ul>
-                                </li>
-                                <li class="content-item">
-                                    <span class="title">제작기간</span>
-                                    <p class="desc">2021.12 ~ 2022.03</p>
-                                </li>
-                                <li class="content-item">
-                                    <span class="title">사용기술</span>
-                                    <p class="desc">Html, CSS, JavaScript, JQuery, Photoshop, Illustrator</p>
-                                </li>
-                            </ul>
-                            <div class="btn-toggle">
-                                <p class="txt"><span class="front">접</span><span class="back">열</span>기</p>
-                                <span class="btn-icon"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio-group">
-                        <div class="portfolio-box is-closed">
-                            <div class="title-group">
-                                <h3 class="title">시티투어버스_ver2</h3>
-                                <a href="http://hyesunghan.github.io/CityTourBus_ver2" target="_blank" class="go-to-link">View Site
-                                    <img class="icon-link" src="./assets/images/icon_link.svg" alt="사이트로 이동">
-                                </a>
-                            </div>
-                            <ul class="content-list">
-                                <li class="content-item">
-                                    <span class="title">구성</span>
-                                    <p class="desc">메인페이지(1)</p>
-                                </li>
-                                <li class="content-item">
-                                    <span class="title">반응 구간</span>
-                                    <ul class="desc list-style" >
-                                        <li class="desc">DeskTop: 1025px 이상 </li>
-                                        <li class="desc">Tablet: 744px 이상 1024px 이하</li>
-                                        <li class="desc">Mobile: 743px 이하</li>
-                                    </ul>
-                                </li>
-                                <li class="content-item">
-                                    <span class="title">제작기간</span>
-                                    <p class="desc">2022.04.12 ~ </p>
-                                </li>
-                                <li class="content-item">
-                                    <span class="title">사용기술</span>
-                                    <p class="desc">Html, SCSS, Photoshop, Illustrator</p>
-                                </li>
-                            </ul>
-                            <div class="btn-toggle">
-                                <p class="txt"><span class="front">접</span><span class="back">열</span>기</p>
-                                <span class="btn-icon"></span>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -327,5 +356,6 @@
     </a>
 
     <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/contact.js"></script>
 </body>
 </html>

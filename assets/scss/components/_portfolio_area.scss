@@ -156,10 +156,10 @@
                     height:250px;     
                     .content-item{
                         .title{
-                            font-size: 20px;
+                            font-size: 16px;
                         }
                         .desc{
-                            font-size: 18px;
+                            font-size: 14px;
                         }
                         // &:not(:last-child){
                         //     margin-bottom:10px;
@@ -169,7 +169,7 @@
                 .btn-toggle{
                     padding:15px 0;
                     .txt{
-                        font-size: 20px;
+                        font-size: 18px;
                     }
                 }
             }
@@ -188,6 +188,9 @@
                 .title-group{
                     .title{
                         font-size: 20px;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
                     }
                     .go-to-link{
                         flex-shrink: 0;

@@ -44,8 +44,30 @@
             }
         }
     }
-
-
+}
+@media screen and (min-width:744px) and (max-width:1024px) {
+    .skill-area{
+        margin-bottom:130px;
+    }
+}
+@media screen and (min-width:1025px) {
+    .skill-area{
+        .education-area{
+            width:80%;
+            max-width:none;
+            height:130px;
+            overflow-y: scroll;
+            .edu-group{
+                .term{
+                    padding:5px 10px;
+                    line-height: 1.3;
+                }
+                .edu-list{
+                    padding-left:10px;
+                }
+            }
+        }
+    }
 }
 // .skill-area{
 //     margin-bottom:50px;

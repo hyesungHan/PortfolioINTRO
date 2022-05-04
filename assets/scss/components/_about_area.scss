@@ -1,12 +1,26 @@
 .about-area{
-    margin:150px 0 50px;
+    margin:150px auto 50px;
 
     .inner{
-        margin:0 auto;
+        margin:auto;
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        gap:50px;
         width:90%;
     }
+    .group{
+        position: relative;
+        margin:auto;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
     .id-card-area{
-        margin:0 auto 30px;
+        position: relative;
+        top:0;
+        left:0;
         display:flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -15,7 +29,13 @@
         border-radius:15px;
         background-color: $thema01-01;
         overflow: hidden;
+        transition:1s;
+        z-index:2;
 
+        &.move{
+            left:-240px;
+            transition:1s;
+        }
         .card-line{
             display:block;
             width:100%;
@@ -49,18 +69,75 @@
             }
         }
     }
+    .contact-area{
+        position: absolute;
+        top:110px;
+        left:55px;
+        display:flex;
+        flex-direction: column;
+        opacity:0;
+
+        &.show{
+            opacity:1;
+            transition:1s;
+        }
+
+        .mobile,
+        .email{
+            display:flex;
+            align-items: center;
+            
+            .icon{
+                padding-right:10px;
+                width:35px;
+            }
+        }
+    }
 
     .bottom-area{
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         align-items: center;
+        flex-direction: column;
+        gap:20px;
         .txt{
-            padding-right:20px;
-            text-align: right;
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 600;
-            .br{
-                display:block;
+        }
+        .index-area{
+            width:100%;
+            display:flex;
+            justify-content: center;
+            align-items: flex-end;
+            flex-direction: column;
+            gap:5px;
+            .index-item{
+                display:flex;
+                align-items: center;
+                text-align: center;
+                &:first-child{
+                    cursor: pointer;
+                }
+                .title{
+                    display:block;
+                    width:120px;
+                    height:30px;
+                    line-height:30px;
+                    background-color: $thema01-02;
+
+                }
+                .deco{
+                    display:block;
+                    width:30px;
+                    height:30px;
+                    background-color: $thema01-05;
+                    img{
+                        margin-top:2px;
+                        width:75%;
+                        vertical-align:middle;
+                    }
+
+                }
             }
         }
         .scroll{
@@ -86,12 +163,18 @@
         margin-top:0;
         float:left;
         width:50%;
-
+        .inner{
+            gap:30px;
+        }
         .common-inner{
             padding:0 25px;
         }
         .id-card-area{
-            margin:80px auto 50px;
+            margin:60px auto 0;
+        }
+        .contact-area{
+            position: absolute;
+            top:190px;
         }
         .bottom-area{
             justify-content: center;
@@ -112,7 +195,7 @@
 @media screen and (min-width:1025px) {
     .about-area{
         margin:0 auto;
-        width:25%;
+        width:30%;
         height:100%;
 
         .common-inner{
@@ -129,10 +212,15 @@
             }
         }
         .id-card-area{
+            margin-bottom:20px;
             display:flex;
             flex-direction: row-reverse;
             width:190px;
             height:285px;
+
+            &.move{
+                left:-200px;
+            }
 
             .card-line{
                 width:35px;
@@ -172,7 +260,10 @@
             justify-content: center;
             .txt{
                 padding-right:0;
-                font-size:20px;
+                font-size:14px;
+                .br{
+                    display:inline;
+                }
             }
             .scroll{
                 display:none;
