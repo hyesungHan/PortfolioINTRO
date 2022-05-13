@@ -2,12 +2,15 @@
     margin-bottom:50px;
     display:flex;
     flex-direction: column;
+
     .education-area{
         width:90%;
         max-width:600px;
         display:flex;
         flex-direction: column;
         align-self: flex-end;
+        font-family: 'HanSantteutDotum_R';
+        
         .edu-group{
             display:flex;
             justify-content: flex-start;

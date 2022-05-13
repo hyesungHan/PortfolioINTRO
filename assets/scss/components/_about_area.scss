@@ -31,10 +31,17 @@
         overflow: hidden;
         transition:1s;
         z-index:2;
+        box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, .2),
+                    2px 3px 2px 1px rgba(0, 0, 0, .2),
+                    3px 4px 0px 1px rgba(0, 0, 0, .2),
+                    4px 5px 0px 0px rgba(0, 0, 0, .2),
+                    5px 6px 0px 0px rgba(0, 0, 0, .2);
+        font-family: 'HanSantteutDotum_R';
 
         &.move{
             left:-240px;
             transition:1s;
+            box-shadow:none;
         }
         .card-line{
             display:block;
@@ -47,6 +54,7 @@
                 line-height: 35px;
                 font-size:20px;
                 font-weight: 600;
+                font-family: 'EliceDigitalBaeum_Bold';
             }
         }
 
@@ -71,11 +79,13 @@
     }
     .contact-area{
         position: absolute;
-        top:110px;
+        top:50%;
         left:55px;
         display:flex;
         flex-direction: column;
+        gap:5px;
         opacity:0;
+        transform:translateY(-50%);
 
         &.show{
             opacity:1;
@@ -86,10 +96,13 @@
         .email{
             display:flex;
             align-items: center;
+            font-size: 14px;
+            font-weight: 600;
+            font-family: 'HanSantteutDotum_R';
             
             .icon{
-                padding-right:10px;
-                width:35px;
+                margin-right:5px;
+                width:25px;
             }
         }
     }
@@ -101,8 +114,9 @@
         flex-direction: column;
         gap:20px;
         .txt{
-            font-size: 14px;
+            font-size: 16px;
             font-weight: 600;
+            font-family: 'HanSantteutDotum_R';
         }
         .index-area{
             width:100%;
@@ -110,11 +124,15 @@
             justify-content: center;
             align-items: flex-end;
             flex-direction: column;
-            gap:5px;
+            gap:15px;
             .index-item{
                 display:flex;
                 align-items: center;
                 text-align: center;
+                font-size: 14px;
+                font-weight: 600;
+                font-family: 'HanSantteutDotum_R';
+                box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
                 &:first-child{
                     cursor: pointer;
                 }
@@ -137,6 +155,11 @@
                         vertical-align:middle;
                     }
 
+                }
+
+                &:hover{
+                    transform:rotate(-3deg);
+                    transition:0.5s ease;
                 }
             }
         }
@@ -173,8 +196,7 @@
             margin:60px auto 0;
         }
         .contact-area{
-            position: absolute;
-            top:190px;
+            transform:none;
         }
         .bottom-area{
             justify-content: center;

@@ -24,6 +24,17 @@ li {
   clear: both;
 }
 
+@font-face {
+  font-family: 'EliceDigitalBaeum_Bold';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_220508@1.0/EliceDigitalBaeum_Bold.woff2") format("woff2");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HanSantteutDotum_R';
+  src: url(../font/HANSANTTEUTDOTUM-REGULAR.TTF);
+}
+
 .about-area {
   margin: 150px auto 50px;
 }
@@ -60,11 +71,14 @@ li {
   overflow: hidden;
   transition: 1s;
   z-index: 2;
+  box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.2), 2px 3px 2px 1px rgba(0, 0, 0, 0.2), 3px 4px 0px 1px rgba(0, 0, 0, 0.2), 4px 5px 0px 0px rgba(0, 0, 0, 0.2), 5px 6px 0px 0px rgba(0, 0, 0, 0.2);
+  font-family: 'HanSantteutDotum_R';
 }
 
 .about-area .id-card-area.move {
   left: -240px;
   transition: 1s;
+  box-shadow: none;
 }
 
 .about-area .id-card-area .card-line {
@@ -80,6 +94,7 @@ li {
   line-height: 35px;
   font-size: 20px;
   font-weight: 600;
+  font-family: 'EliceDigitalBaeum_Bold';
 }
 
 .about-area .id-card-area .id-card-info-group {
@@ -103,11 +118,13 @@ li {
 
 .about-area .contact-area {
   position: absolute;
-  top: 110px;
+  top: 50%;
   left: 55px;
   display: flex;
   flex-direction: column;
+  gap: 5px;
   opacity: 0;
+  transform: translateY(-50%);
 }
 
 .about-area .contact-area.show {
@@ -119,12 +136,15 @@ li {
 .about-area .contact-area .email {
   display: flex;
   align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'HanSantteutDotum_R';
 }
 
 .about-area .contact-area .mobile .icon,
 .about-area .contact-area .email .icon {
-  padding-right: 10px;
-  width: 35px;
+  margin-right: 5px;
+  width: 25px;
 }
 
 .about-area .bottom-area {
@@ -136,8 +156,9 @@ li {
 }
 
 .about-area .bottom-area .txt {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
+  font-family: 'HanSantteutDotum_R';
 }
 
 .about-area .bottom-area .index-area {
@@ -146,13 +167,17 @@ li {
   justify-content: center;
   align-items: flex-end;
   flex-direction: column;
-  gap: 5px;
+  gap: 15px;
 }
 
 .about-area .bottom-area .index-area .index-item {
   display: flex;
   align-items: center;
   text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'HanSantteutDotum_R';
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
 }
 
 .about-area .bottom-area .index-area .index-item:first-child {
@@ -178,6 +203,11 @@ li {
   margin-top: 2px;
   width: 75%;
   vertical-align: middle;
+}
+
+.about-area .bottom-area .index-area .index-item:hover {
+  transform: rotate(-3deg);
+  transition: 0.5s ease;
 }
 
 .about-area .bottom-area .scroll {
@@ -212,8 +242,7 @@ li {
     margin: 60px auto 0;
   }
   .about-area .contact-area {
-    position: absolute;
-    top: 190px;
+    transform: none;
   }
   .about-area .bottom-area {
     justify-content: center;
@@ -310,6 +339,7 @@ li {
 
 .btn-scroll-top .txt {
   font-size: 16px;
+  font-family: 'HanSantteutDotum_R';
 }
 
 .btn-scroll-top .icon-scroll {
@@ -377,6 +407,7 @@ body {
   display: inline-block;
   vertical-align: top;
   font-size: 34px;
+  font-family: 'EliceDigitalBaeum_Bold';
 }
 
 @media screen and (min-width: 744px) and (max-width: 1024px) {
@@ -441,6 +472,7 @@ body {
 .header-area .title {
   line-height: 75px;
   font-size: 30px;
+  font-family: 'EliceDigitalBaeum_Bold';
 }
 
 .header-area .menu-area {
@@ -504,6 +536,7 @@ iframe {
 .portfolio-area .portfolio-group {
   position: relative;
   margin-bottom: 30px;
+  font-family: 'HanSantteutDotum_R';
 }
 
 .portfolio-area .portfolio-group::before {
@@ -519,7 +552,7 @@ iframe {
 }
 
 .portfolio-area .portfolio-group .portfolio-box {
-  padding: 5px 15px 0;
+  padding: 0 10px;
   margin: auto;
   background-color: #d6d6d8;
   width: 90%;
@@ -544,33 +577,50 @@ iframe {
 }
 
 .portfolio-area .portfolio-group .portfolio-box .title-group {
+  padding: 10px 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 0 10px;
 }
 
 .portfolio-area .portfolio-group .portfolio-box .title-group .title {
   font-size: 18px;
 }
 
-.portfolio-area .portfolio-group .portfolio-box .title-group .go-to-link {
-  padding-top: 5px;
+.portfolio-area .portfolio-group .portfolio-box .title-group .go-to {
+  position: relative;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.portfolio-area .portfolio-group .portfolio-box .title-group .go-to::before {
+  position: absolute;
+  top: 50%;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  opacity: 0.45;
+  transform: translateY(-50%);
+}
+
+.portfolio-area .portfolio-group .portfolio-box .title-group .go-to .go-to-link,
+.portfolio-area .portfolio-group .portfolio-box .title-group .go-to .go-to-pdf {
+  padding: 3px 5px;
+  display: flex;
   align-items: center;
-  font-size: 16px;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  line-height: 2;
 }
 
-.portfolio-area .portfolio-group .portfolio-box .title-group .go-to-link:hover {
-  font-weight: 600;
+.portfolio-area .portfolio-group .portfolio-box .title-group .go-to .go-to-link:hover,
+.portfolio-area .portfolio-group .portfolio-box .title-group .go-to .go-to-pdf:hover {
+  background-color: #6d87a8;
+  border-radius: 1px;
   transition: 0.3s ease;
-}
-
-.portfolio-area .portfolio-group .portfolio-box .title-group .go-to-link .icon-link {
-  margin-left: 3px;
-  width: 15px;
-  height: 15px;
 }
 
 .portfolio-area .portfolio-group .portfolio-box .content-list {
@@ -596,14 +646,14 @@ iframe {
 .portfolio-area .portfolio-group .portfolio-box .content-list .content-item .title {
   display: block;
   width: 100%;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600;
 }
 
 .portfolio-area .portfolio-group .portfolio-box .content-list .content-item .desc {
   margin-left: 7%;
   text-align: justify;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .portfolio-area .portfolio-group .portfolio-box .content-list .content-item .desc.list-style .desc {
@@ -644,14 +694,14 @@ iframe {
     padding: 0 25px;
   }
   .portfolio-area .portfolio-group .portfolio-box {
-    padding-top: 10px;
+    padding: 0 7px;
   }
-  .portfolio-area .portfolio-group .portfolio-box .title-group .go-to-link {
+  .portfolio-area .portfolio-group .portfolio-box .title-group .title {
     font-size: 18px;
   }
-  .portfolio-area .portfolio-group .portfolio-box .title-group .go-to-link .icon-link {
-    width: 20px;
-    height: 20px;
+  .portfolio-area .portfolio-group .portfolio-box .title-group .go-to .go-to-link,
+  .portfolio-area .portfolio-group .portfolio-box .title-group .go-to .go-to-pdf {
+    font-size: 14px;
   }
   .portfolio-area .portfolio-group .portfolio-box .content-list {
     height: 250px;
@@ -676,15 +726,18 @@ iframe {
   }
   .portfolio-area .portfolio-group .portfolio-box {
     width: 95%;
+    padding: 0 7px;
   }
   .portfolio-area .portfolio-group .portfolio-box .title-group .title {
-    font-size: 20px;
+    font-size: 18px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
   }
-  .portfolio-area .portfolio-group .portfolio-box .title-group .go-to-link {
+  .portfolio-area .portfolio-group .portfolio-box .title-group .go-to .go-to-link,
+  .portfolio-area .portfolio-group .portfolio-box .title-group .go-to .go-to-pdf {
     flex-shrink: 0;
+    font-size: 14px;
   }
 }
 
@@ -700,6 +753,7 @@ iframe {
   display: flex;
   flex-direction: column;
   align-self: flex-end;
+  font-family: 'HanSantteutDotum_R';
 }
 
 .skill-area .education-area .edu-group {
