@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .hide,
 .hidden {
   display: none;
@@ -574,6 +575,36 @@ iframe {
 .portfolio-area .portfolio-group .portfolio-box.is-closed .btn-toggle .btn-icon {
   margin-top: 0;
   transform: rotate(-135deg);
+}
+
+.portfolio-area .portfolio-group .portfolio-box.renewal {
+  position: relative;
+}
+
+.portfolio-area .portfolio-group .portfolio-box.renewal::before, .portfolio-area .portfolio-group .portfolio-box.renewal::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: '';
+  display: block;
+}
+
+.portfolio-area .portfolio-group .portfolio-box.renewal::before {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 1;
+}
+
+.portfolio-area .portfolio-group .portfolio-box.renewal::after {
+  top: 50%;
+  right: 50%;
+  content: '리뉴얼 진행중';
+  color: #d6d6d8;
+  font-weight: 600;
+  letter-spacing: 1.5;
+  transform: translate(50%, -50%);
+  z-index: 2;
 }
 
 .portfolio-area .portfolio-group .portfolio-box .title-group {
