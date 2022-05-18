@@ -592,7 +592,7 @@ iframe {
 .portfolio-area .portfolio-group .portfolio-box.renewal::before {
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.85);
   z-index: 1;
 }
 
@@ -631,9 +631,9 @@ iframe {
   content: '';
   display: block;
   width: 100%;
-  height: 1px;
-  background-color: white;
-  opacity: 0.45;
+  height: 2px;
+  background-color: #0c1c47;
+  opacity: 0.3;
   transform: translateY(-50%);
 }
 
@@ -670,7 +670,7 @@ iframe {
   flex-wrap: wrap;
 }
 
-.portfolio-area .portfolio-group .portfolio-box .content-list .content-item:not(:nth-child(2)) {
+.portfolio-area .portfolio-group .portfolio-box .content-list .content-item:not(:nth-child(1)) {
   margin-bottom: 15px;
 }
 
